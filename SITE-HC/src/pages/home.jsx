@@ -1,39 +1,47 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
-    return (
+  return (
+    <>
+      <div className="bg-home-bg h-screen w-full">
+        <div className="font-modak flex justify-center items-center h-60">
+          <h1 className="text-7xl text-yellow-300">Amigos da Saúde!</h1>
+        </div>
 
-      <>
-        <div className="ml-32  m-auto mt-20 bg-white  h-96">
-          <div className="flex justify-between w-3/4 m">
+        <div className="flex justify-between w-5/12 m-auto font-modak gap-3">
 
-            <div>
-              
-              <h1 className= "font-modak text-5xl mb-30 w-" >Seja-bem vindo(a) a equipe dos Amigos da Saúde!</h1>
-              <p className="font-abezee text-2xl mt-10">Aqui você poderá</p>
-
-              <div className="flex m-0">
-
-                <img className=" left-2/4 absolute top-52" src="src\assets\Design_sem_nome-removebg-preview.png" alt="" />
-
-              </div>
-              
-
+          <Link to = 'jogos'>
+            <div className="flex items-center justify-center gap-4 text-4xl">
+              <img src="src/assets/game-controller-svgrepo-com.svg" alt="ícone de controle de jogo" className="w-8" />
+              <p>JOGAR</p>
             </div>
-            
-       
-          </div>
-         
+          </Link>
           
+          <Link to = 'assista'>
+            <div className="flex items-center justify-center gap-4 text-4xl">
+              <img src="src/assets/tv-alt-svgrepo-com.svg" alt="ícone de TV" className="w-8" />
+              <p>ASSISTIR</p>
+            </div>
+          </Link>
+        
+          <Link to= 'personagem'>
+            <div className="flex items-center justify-center gap-4 text-4xl">
+              <img src="src/assets/edit-2-svgrepo-com.svg" alt="ícone de edição" className="w-8" />
+              <p>MEU PERSONAGEM</p>
+            </div>
+          </Link>
+          
+
+
+
+
+
+
         </div>
-        <div className="flex bg-home-bg w-full h-screen">
-          <div className="w-3/4 m-auto mt-20">
-            <h1 className="font-modak text-8xl">CRIE SEU PERSONAGEM!</h1>
-          </div>
-        </div>
-        </>
-      );
+      </div>
+    </>
+  );
 }
 
 export default Home;

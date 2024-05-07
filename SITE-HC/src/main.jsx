@@ -7,6 +7,9 @@ import Equipe from './pages/equipe';
 import Contato from './pages/contato';
 import Funcionamento from './pages/funcionamento';
 import Home from './pages/home'; // Importar a página Home
+import Jogos from './pages/jogos';
+import Assista from './pages/assista';
+import Personagem from './pages/personagem';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +19,10 @@ const router = createBrowserRouter([
       { path: 'contato', element: <Contato/> },
       { path: 'equipe', element: <Equipe/> },
       { path: 'funcionamento', element: <Funcionamento/> },
-      { index: true, element: <Home/> } // Definir a rota para a página inicial sem especificar um caminho
+      { index: true, element: <Home/> },
+      { path: 'jogos', element: <Jogos/>},
+      { path: 'assista', element: <Assista/>},
+      { path: 'personagem', element: <Personagem/>} // Definir a rota para a página inicial sem especificar um caminho
     ]
   }
 ]);
