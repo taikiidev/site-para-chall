@@ -2,7 +2,13 @@ import React from "react";
 
 function Jogos () {
     return ( 
-        <h1>Jogos</h1>
+
+        <>
+        <div className="mt-16">
+            <h1>Jogos</h1>
+        </div>
+        </>
+        
      );
 }
 

@@ -2,7 +2,13 @@ import React from "react";
 
 function Assista() {
     return ( 
-        <h1>Assista</h1>
+
+        <>
+        <div className="mt-16">
+             <h1>Assista</h1>
+        </div>
+        </>
+       
      );
 }
 

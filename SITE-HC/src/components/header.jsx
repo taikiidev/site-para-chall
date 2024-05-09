@@ -4,24 +4,25 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className='border-b-2 border-spacing-1'>
+    <header className='border-b-2 border-spacing-1 fixed top-0 left-0 right-0 bg-white z-10'>
       <div className='font-abezee flex justify-between text-sm m-auto w-2/3 p-4'>
         <div className='flex gap-5'>
           <ul className="flex gap-5">
             <li>
-              <Link to='https://www.hc.fm.usp.br/hc/portal/' target='_blank'><h1>- HC</h1></Link>
+              <a href='https://www.hc.fm.usp.br/hc/portal/' target='_blank'><h1>- HC</h1></a>
             </li>
             <li>
-              <Link to='http://localhost:5173'><p>-Home</p></Link>
+              <a href='http://localhost:5173'><p>-Home</p></a>
             </li>
             <li>
-              <Link to='https://portalpaciente.icr.usp.br/portal/' target='_blank'><h1>- Instituto da Criança</h1></Link>
+              <a href='https://portalpaciente.icr.usp.br/portal/' target='_blank'><h1>- Instituto da Criança</h1></a>
             </li>
           </ul>
         </div>
         <Navbar />
       </div>
     </header>
+
   );
 }
 

@@ -2,7 +2,11 @@ import React from "react";
 
 function Equipe() {
     return (
-        <h1>Equipe</h1>
+        <>
+        <div className="mt-16">
+            <h1>equip</h1>
+        </div>
+        </>
      );
 }
 

@@ -2,8 +2,14 @@ import React from "react";
 
 function Contato() {
     return ( 
+        <>
+
+        <div className="mt-16">
+            <h1>contato</h1>
+        </div>
         
-        <h1>Contato</h1>
+        </>
+        
         
     );
 }
