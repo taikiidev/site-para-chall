@@ -4,12 +4,12 @@ import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import Equipe from './pages/equipe';
-import Contato from './pages/contato';
 import Funcionamento from './pages/funcionamento';
 import Home from './pages/home'; // Importar a página Home
 import Jogos from './pages/jogos';
 import Assista from './pages/assista';
 import Personagem from './pages/personagem';
+import Contato from './pages/contato';
 
 const router = createBrowserRouter([
   {
