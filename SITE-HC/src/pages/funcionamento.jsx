@@ -1,5 +1,3 @@
-import React from "react";
-
 function Funcionamento() {
     return (  
         <div className="mt-16">

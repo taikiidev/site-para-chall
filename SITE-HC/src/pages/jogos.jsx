@@ -1,5 +1,3 @@
-import React from "react";
-
 function Jogos () {
     return ( 
 
@@ -9,7 +7,7 @@ function Jogos () {
         </div>
         </>
         
-     );
+    );
 }
 
 export default Jogos ;

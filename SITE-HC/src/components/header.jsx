@@ -1,6 +1,4 @@
-import React from 'react';
 import Navbar from './navbar';
-import { Link } from 'react-router-dom';
 
 function Header() {
   return (
