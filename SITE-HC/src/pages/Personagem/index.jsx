@@ -1,4 +1,5 @@
 import { avatar } from "./avatar"
+import avatarImg from "../../assets/avatar/avatar.png"
 
 function Personagem() {
   const changeAvatarStyle = (attribute, side) => {
@@ -21,11 +22,12 @@ function Personagem() {
   return (
     <div className="pt-16 h-screen flex bg-blue-500">
       <div className="w-1/2 flex items-center justify-center">
-        <div className="h-3/4 w-3/4 bg-slate-400 flex flex-col items-center justify-center">
-          <p id="avatar-cabeca" data-attribute="cabeca" data-index="3">{avatar.cabeca[3]}</p>
-          <p id="avatar-camisa" data-attribute="camisa" data-index="0">{avatar.camisa[0]}</p>
-          <p id="avatar-short" data-attribute="short" data-index="0">{avatar.short[0]}</p>
-          <p id="avatar-tenis" data-attribute="tenis" data-index="0">{avatar.tenis[0]}</p>
+        <div className="h-3/4 w-3/4 bg-slate-400 flex flex-col items-center justify-center relative">
+          <img className="w-2/5 absolute" src={avatarImg} alt="" />
+          <p id="avatar-cabeca" className="z-10" data-attribute="cabeca" data-index="3">{avatar.cabeca[3]}</p>
+          <img className="z-10 w-2/6 absolute top-[200px]" src={avatar.camisa[0]} alt="" />
+          <p id="avatar-short" className="z-10" data-attribute="short" data-index="0">{avatar.short[0]}</p>
+          <p id="avatar-tenis" className="z-10" data-attribute="tenis" data-index="0">{avatar.tenis[0]}</p>
         </div>
       </div>
 
