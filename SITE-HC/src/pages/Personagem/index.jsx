@@ -1,66 +1,97 @@
-import { avatar } from "./avatar"
-import avatarImg from "../../assets/avatar/avatar.png"
+import avatarImg from "../../assets/avatar/avatar.png";
+import { useContext } from "react";
+import { AvatarContext } from "../../provider/AvatarProvider";
 
 function Personagem() {
-  const changeAvatarStyle = (attribute, side) => {
-    const element = document.getElementById(`avatar-${attribute}`);
+  const {avatar, setAvatar, avatarInfo} = useContext(AvatarContext)
+  
 
-    let index = parseInt(element.getAttribute('data-index'));
-    const lista = avatar[attribute];
+  const trocarProximo = (caracteristica) => {
+    setAvatar(prevAvatar => {
+        const newIndex = (prevAvatar[caracteristica] + 1) % avatarInfo[caracteristica].length;
+        return { ...prevAvatar, [caracteristica]: newIndex };
+    });
+  };
 
-    if(side == "foward"){
-      index = (index + 1) % lista.length;
-    }
-    else{
-      index = (index - 1 + lista.length) % lista.length;
-    }
-
-    element.setAttribute('data-index', index);
-    element.innerText = lista[index];
-  }
+  const trocarAnterior = (caracteristica) => {
+      setAvatar(prevAvatar => {
+          const newIndex = (prevAvatar[caracteristica] - 1 + avatarInfo[caracteristica].length) % avatarInfo[caracteristica].length;
+          return { ...prevAvatar, [caracteristica]: newIndex };
+      });
+  };
+  console.log(avatar)
 
   return (
     <div className="pt-16 h-screen flex bg-blue-500">
       <div className="w-1/2 flex items-center justify-center">
         <div className="h-3/4 w-3/4 bg-slate-400 flex flex-col items-center justify-center relative">
-          <img className="w-2/5 absolute" src={avatarImg} alt="" />
-          <p id="avatar-cabeca" className="z-10" data-attribute="cabeca" data-index="3">{avatar.cabeca[3]}</p>
-          <img className="z-10 w-2/6 absolute top-[200px]" src={avatar.camisa[0]} alt="" />
-          <p id="avatar-short" className="z-10" data-attribute="short" data-index="0">{avatar.short[0]}</p>
-          <p id="avatar-tenis" className="z-10" data-attribute="tenis" data-index="0">{avatar.tenis[0]}</p>
+          <img
+            className="w-[40%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            src={avatarImg}
+            alt=""
+          />
+          <img
+            className="z-20 w-[34%] absolute top-[58%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+            id="avatar-camisa"
+            data-attribute="camisa"
+            data-index="0"
+            src={avatarInfo.camisa[avatar.camisa]}
+            alt=""
+          />
+          <img
+            className="z-10 w-[22%] absolute top-[80%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+            id="avatar-short"
+            data-attribute="short"
+            data-index="0"
+            src={avatarInfo.short[avatar.short]}
+            alt=""
+          />
+          <img
+            className="z-10 w-[40%] absolute top-[92%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+            id="avatar-tenis"
+            data-attribute="tenis"
+            data-index="0"
+            src={avatarInfo.tenis[avatar.tenis]}
+            alt=""
+          />
         </div>
       </div>
 
       <div className="w-1/2 bg-orange-500 flex justify-center items-center">
         <div className="flex flex-col items-center py-5 w-1/2 gap-5 bg-blue-300">
           <div className="flex gap-5 bg-yellow-100">
-            <button onClick={() => changeAvatarStyle("cabeca", "back")}>&lt;</button>
-            <p>cabeça</p>
-            <button onClick={() => changeAvatarStyle("cabeca", "foward")}>&gt;</button>
-          </div>
-
-          <div className="flex gap-5 bg-yellow-100">
-            <button onClick={() => changeAvatarStyle("camisa", "back")}>&lt;</button>
+            <button onClick={() => trocarProximo("camisa")}>
+              &lt;
+            </button>
             <p>camisa</p>
-            <button onClick={() => changeAvatarStyle("camisa", "foward")}>&gt;</button>
+            <button onClick={() => trocarAnterior("camisa")}>
+              &gt;
+            </button>
           </div>
 
           <div className="flex gap-5 bg-yellow-100">
-            <button onClick={() => changeAvatarStyle("short", "back")}>&lt;</button>
+            <button onClick={() => trocarProximo("short")}>
+              &lt;
+            </button>
             <p>short</p>
-            <button onClick={() => changeAvatarStyle("short", "foward")}>&gt;</button>
+            <button onClick={() => trocarAnterior("short")}>
+              &gt;
+            </button>
           </div>
 
           <div className="flex gap-5 bg-yellow-100">
-            <button onClick={() => changeAvatarStyle("tenis", "back")}>&lt;</button>
+            <button onClick={() => trocarProximo("tenis")}>
+              &lt;
+            </button>
             <p>tenis</p>
-            <button onClick={() => changeAvatarStyle("tenis", "foward")}>&gt;</button>
+            <button onClick={() => trocarAnterior("tenis")}>
+              &gt;
+            </button>
           </div>
 
           <button className="bg-yellow-100">ATUALIZAR</button>
         </div>
       </div>
-      
     </div>
   );
 }

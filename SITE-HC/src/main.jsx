@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'; // Corrigindo a importação de createR
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App';
-import Equipe from './pages/equipe';
+import Equipe from './pages/Equipe';
 import Funcionamento from './pages/Funcionamento';
 import Home from './pages/Home'; // Importar a página Home
 import Jogos from './pages/Jogos';
