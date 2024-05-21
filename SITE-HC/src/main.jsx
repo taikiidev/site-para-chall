@@ -4,22 +4,22 @@ import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import Equipe from './pages/equipe';
-import Funcionamento from './pages/funcionamento';
-import Home from './pages/home'; // Importar a página Home
-import Jogos from './pages/jogos';
-import Assista from './pages/assista';
+import Funcionamento from './pages/Funcionamento';
+import Home from './pages/Home'; // Importar a página Home
+import Jogos from './pages/Jogos';
+import Assista from './pages/Assista';
 import Personagem from './pages/Personagem';
-import Contato from './pages/contato';
+import Contato from './pages/Contato';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App/>,
     children: [
+      { index: true, element: <Home/> },
       { path: 'contato', element: <Contato/> },
       { path: 'equipe', element: <Equipe/> },
       { path: 'funcionamento', element: <Funcionamento/> },
-      { index: true, element: <Home/> },
       { path: 'jogos', element: <Jogos/>},
       { path: 'assista', element: <Assista/>},
       { path: 'personagem', element: <Personagem/>} // Definir a rota para a página inicial sem especificar um caminho
