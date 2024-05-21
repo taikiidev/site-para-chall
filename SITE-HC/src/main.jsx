@@ -8,7 +8,7 @@ import Funcionamento from './pages/funcionamento';
 import Home from './pages/home'; // Importar a página Home
 import Jogos from './pages/jogos';
 import Assista from './pages/assista';
-import Personagem from './pages/personagem';
+import Personagem from './pages/Personagem';
 import Contato from './pages/contato';
 
 const router = createBrowserRouter([
