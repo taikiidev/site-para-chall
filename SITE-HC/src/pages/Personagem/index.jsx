@@ -38,21 +38,21 @@ function Personagem() {
           </div>
 
           <div className="flex gap-5 bg-yellow-100">
-            <button>&lt;</button>
+            <button onClick={() => changeAvatarStyle("camisa", "back")}>&lt;</button>
             <p>camisa</p>
-            <button>&gt;</button>
+            <button onClick={() => changeAvatarStyle("camisa", "foward")}>&gt;</button>
           </div>
 
           <div className="flex gap-5 bg-yellow-100">
-            <button>&lt;</button>
+            <button onClick={() => changeAvatarStyle("short", "back")}>&lt;</button>
             <p>short</p>
-            <button>&gt;</button>
+            <button onClick={() => changeAvatarStyle("short", "foward")}>&gt;</button>
           </div>
 
           <div className="flex gap-5 bg-yellow-100">
-            <button>&lt;</button>
+            <button onClick={() => changeAvatarStyle("tenis", "back")}>&lt;</button>
             <p>tenis</p>
-            <button>&gt;</button>
+            <button onClick={() => changeAvatarStyle("tenis", "foward")}>&gt;</button>
           </div>
 
           <button className="bg-yellow-100">ATUALIZAR</button>
