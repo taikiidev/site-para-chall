@@ -24,7 +24,7 @@ function Personagem() {
   return (
     <div className="pt-16 h-screen flex bg-blue-500">
       <div className="w-1/2 flex items-center justify-center">
-        <div className="h-3/4 w-3/4 bg-slate-400 flex flex-col items-center justify-center relative">
+        <div className="h-3/4 w-3/4 flex flex-col items-center justify-center relative">
           <img
             className="w-[40%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
             src={avatarImg}
@@ -57,9 +57,9 @@ function Personagem() {
         </div>
       </div>
 
-      <div className="w-1/2 bg-orange-500 flex justify-center items-center">
-        <div className="flex flex-col items-center py-5 w-1/2 gap-5 bg-blue-300">
-          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-yellow-100">
+      <div className="w-1/2  bg-avatar-bg flex justify-center items-center">
+        <div className="flex flex-col items-center rounded-2xl py-5 w-1/3 gap-5 bg-white">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
             <button onClick={() => trocarProximo("camisa")}>
               &lt;
             </button>
@@ -69,7 +69,7 @@ function Personagem() {
             </button>
           </div>
 
-          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-yellow-100">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
             <button onClick={() => trocarProximo("short")}>
               &lt;
             </button>
@@ -79,7 +79,7 @@ function Personagem() {
             </button>
           </div>
 
-          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-yellow-100">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
             <button onClick={() => trocarProximo("tenis")}>
               &lt;
             </button>
@@ -89,7 +89,7 @@ function Personagem() {
             </button>
           </div>
 
-          <button className="bg-yellow-100">ATUALIZAR</button>
+          <button className="flex w-40 items-center justify-center p-1 rounded-3xl gap-5 bg-blue-600">ATUALIZAR</button>
         </div>
       </div>
     </div>
