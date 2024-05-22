@@ -12,6 +12,8 @@ export default {
       },
       backgroundImage: {
         'home-bg': "url('/src/assets/design.png')",
+        'hospital-bg': "url('/src/assets/hospital.avif')",
+        'hospital2-bg': "url('/src/assets/hospital2.png')",
       },
       
       fontFamily: {
