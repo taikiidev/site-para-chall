@@ -1,7 +1,3 @@
-import enzzo from "../assets/enzzo.jpeg"
-import luis from "../assets/fotoluis.jpeg"
-import rafa from "../assets/rafa.jpeg"
-import taiki from "../assets/taiki.jpeg"
 
 function Equipe() {
     return (
@@ -12,7 +8,7 @@ function Equipe() {
         </div>
         <div className="flex justify-center gap-10  ">
             <div className="bg-white h-90 rounded-lg shadow-md pt-16 hover:bg-slate-100 transition hover:scale-110 object-cover">
-                <img src={enzzo}
+                <img src= "src\assets\fotos\enzzo.jpeg"
                 className="w-40 h-40 rounded-full mx-auto object-cover"
                 alt="user" />
                 <div className="text-center my-10 mx-5 font-Anta">
@@ -32,7 +28,7 @@ function Equipe() {
             </div>
 
             <div className="bg-white h-90 rounded-lg shadow-md pt-16 hover:bg-slate-100 transition hover:scale-110 object-cover">
-                <img src={luis}
+                <img src= "src\assets\fotos\fotoluis.jpeg"
                 className="w-40 h-40 rounded-full mx-auto"
                 alt="user" />
                 <div className="text-center my-10 mx-5 font-Anta">
@@ -52,7 +48,7 @@ function Equipe() {
             </div>
 
             <div className="bg-white h-90 rounded-lg shadow-md pt-16 hover:bg-slate-100 transition hover:scale-110">
-                <img src={rafa}
+                <img src= "src\assets\fotos\rafa.jpeg"
                 className="w-40 h-40 rounded-full mx-auto object-fill "
                 alt="user" />
                 <div className="text-center my-10 mx-5 font-Anta">
@@ -72,7 +68,7 @@ function Equipe() {
             </div>
 
             <div className="bg-white h-90 rounded-lg shadow-md pt-16 hover:bg-slate-100 transition hover:scale-110">
-                <img src={taiki}
+                <img src= "src\assets\fotos\taiki.jpeg"
                 className="w-40 h-40 rounded-full mx-auto object-cover"
                 alt="user" />
                 <div className="text-center my-10 mx-5 font-Anta">
