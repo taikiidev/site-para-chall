@@ -36,14 +36,14 @@ function Personagem() {
   return (
     <div className="pt-16 h-screen flex bg-blue-500">
       <div className="w-1/2 flex items-center justify-center">
-        <div className="h-3/4 w-3/4 bg-slate-400 flex flex-col items-center justify-center relative">
+        <div className="h-[32rem] w-[15rem] bg-slate-400 flex flex-col items-center justify-center relative">
           <img
-            className="w-[40%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            className="w-[100%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
             src={avatarImg}
             alt=""
           />
           <img
-            className="z-20 w-[34%] absolute top-[58%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+            className="z-20 w-[85%] absolute top-[58%] left-[47%] translate-x-[-50%] translate-y-[-50%]"
             id="avatar-camisa"
             data-attribute="camisa"
             data-index="0"
@@ -51,7 +51,7 @@ function Personagem() {
             alt=""
           />
           <img
-            className="z-10 w-[22%] absolute top-[80%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+            className="z-10 w-[58%] absolute top-[80%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
             id="avatar-short"
             data-attribute="short"
             data-index="0"
@@ -59,7 +59,7 @@ function Personagem() {
             alt=""
           />
           <img
-            className="z-10 w-[40%] absolute top-[92%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+            className="z-10 w-[95%] absolute top-[93%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
             id="avatar-tenis"
             data-attribute="tenis"
             data-index="0"
