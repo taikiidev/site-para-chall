@@ -36,7 +36,7 @@ function Personagem() {
   return (
     <div className="pt-16 h-screen flex bg-blue-500">
       <div className="w-1/2 flex items-center justify-center">
-        <div className="h-3/4 w-3/4 bg-slate-400 flex flex-col items-center justify-center relative">
+        <div className="h-3/4 w-3/4 flex flex-col items-center justify-center relative">
           <img
             className="w-[40%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
             src={avatarImg}
@@ -59,7 +59,7 @@ function Personagem() {
             alt=""
           />
           <img
-            className="z-10 w-[40%] absolute top-[92%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+            className="z-10 w-[40%] absolute top-[99%] left-[49%] translate-x-[-50%] translate-y-[-40%]"
             id="avatar-tenis"
             data-attribute="tenis"
             data-index="0"
@@ -69,33 +69,33 @@ function Personagem() {
         </div>
       </div>
 
-      <div className="w-1/2 bg-blue-500 flex justify-center items-center font-abezee font-semibold text-lg">
-        <div className="flex flex-col items-center justify-center py-5 w-1/2 h-[50%] rounded-3xl gap-5 bg-blue-300">
-          <div className="flex justify-center gap-5 bg-yellow-100 hover:bg-yellow-200 rounded-[40px] py-4 px-4 w-[55%]">
+      <div className="w-1/2  bg-avatar-bg flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center rounded-2xl py-5 w-1/3 h-1/3 gap-5 bg-white">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
             <button onClick={() => trocarProximo("camisa")}>
               &lt;
             </button>
-            <p>camisa</p>
+            <p>Camisa</p>
             <button onClick={() => trocarAnterior("camisa")}>
               &gt;
             </button>
           </div>
 
-          <div className="flex justify-center gap-5 bg-yellow-100 hover:bg-yellow-200 rounded-[40px] py-4 px-4 w-[55%]">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
             <button onClick={() => trocarProximo("short")}>
               &lt;
             </button>
-            <p>short</p>
+            <p>Short</p>
             <button onClick={() => trocarAnterior("short")}>
               &gt;
             </button>
           </div>
 
-          <div className="flex justify-center gap-5 bg-yellow-100 hover:bg-yellow-200 rounded-[40px] py-4 px-4 w-[55%]">
-            <button className="" onClick={() => trocarProximo("tenis")}>
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
+            <button onClick={() => trocarProximo("tenis")}>
               &lt;
             </button>
-            <p>tenis</p>
+            <p>Tenis</p>
             <button onClick={() => trocarAnterior("tenis")}>
               &gt;
             </button>

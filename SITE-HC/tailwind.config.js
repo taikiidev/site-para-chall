@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         "blue-500": "#5271ff",
-        "white-100": "#f0f0f0" 
+        "white-100": "#f0f0f0" ,
+        "dark-green": "#008f21",
       },
       backgroundImage: {
         'home-bg': "url('/src/assets/design.png')",
