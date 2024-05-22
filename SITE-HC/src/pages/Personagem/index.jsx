@@ -59,31 +59,31 @@ function Personagem() {
 
       <div className="w-1/2 bg-orange-500 flex justify-center items-center">
         <div className="flex flex-col items-center py-5 w-1/2 gap-5 bg-blue-300">
-          <div className="flex gap-5 bg-yellow-100">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-yellow-100">
             <button onClick={() => trocarProximo("camisa")}>
               &lt;
             </button>
-            <p>camisa</p>
+            <p>Camisa</p>
             <button onClick={() => trocarAnterior("camisa")}>
               &gt;
             </button>
           </div>
 
-          <div className="flex gap-5 bg-yellow-100">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-yellow-100">
             <button onClick={() => trocarProximo("short")}>
               &lt;
             </button>
-            <p>short</p>
+            <p>Short</p>
             <button onClick={() => trocarAnterior("short")}>
               &gt;
             </button>
           </div>
 
-          <div className="flex gap-5 bg-yellow-100">
+          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-yellow-100">
             <button onClick={() => trocarProximo("tenis")}>
               &lt;
             </button>
-            <p>tenis</p>
+            <p>Tenis</p>
             <button onClick={() => trocarAnterior("tenis")}>
               &gt;
             </button>
