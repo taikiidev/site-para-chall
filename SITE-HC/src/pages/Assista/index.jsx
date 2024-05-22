@@ -54,16 +54,15 @@ function Assista() {
             <img className="absolute w-[25rem] right-[10%] top-[50%] translate-y-[-50%]" src="src/assets/medica.png" alt="" />
           </div>
         </div>
-        <aside className="flex flex-col items-center gap-14 pt-24 font-abezee grow border-l-2 border-gray-300 bg-gray-600">
+        <aside className="flex flex-col items-center gap-16 pt-24 font-Anta grow border-l-2 border-gray-300 bg-gray-600 ">
           <h1 className="text-3xl font-semibold">Videos dos exames</h1>
 
-          <ul className="w-full flex flex-col gap-4 items-center text-xl">
-            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-300">exame 1</li>
-            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-300">exame 2</li>
-            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-300">exame 3</li>
-            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-300">exame 4</li>
-            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-300">exame 5</li>
-            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-300">exame 6</li>
+          <ul className="w-full flex flex-col gap-4 items-center text-xl ">
+            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-400 place-content-center hover:bg-slate-200 transition hover:scale-110">Exame 1</li>
+            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-400 place-content-center hover:bg-slate-200 transition hover:scale-110">Exame 2</li>
+            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-400 place-content-center hover:bg-slate-200 transition hover:scale-110">Exame 3</li>
+            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-400 place-content-center hover:bg-slate-200 transition hover:scale-110">Exame 4</li>
+            <li className="border rounded-[40px] py-2 px-4 h-20 flex items-center w-[90%] bg-slate-400 place-content-center hover:bg-slate-200 transition hover:scale-110">Exame 5</li>
           </ul>
         </aside>
       </div>
