@@ -12,11 +12,15 @@ export default {
       },
       backgroundImage: {
         'home-bg': "url('/src/assets/design.png')",
+        'equipe-bg': "url('/src/assets/designequipe.png')",
+        'fundo-bg': "url('/src/assets/foto.png')",
       },
       
       fontFamily: {
         'modak': ['Modak', 'system-ui'],
-        'abezee': ['ABeeZee', 'sans-serif']
+        'abezee': ['ABeeZee', 'sans-serif'], 
+        'Orbitron' :['Orbitron', 'sans-serif'],
+        'Anta' :['Anta', 'sans-serif']
       }
       
     },

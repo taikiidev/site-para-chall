@@ -39,7 +39,7 @@ function Home() {
         <div className="flex justify-between w-6/12 m-auto gap-5">\
 
           <div>
-            <iframe width="400" className="border-dashed" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc" title="ICr lança manual lúdico para crianças internadas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="400" className="border-dashed" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc" title="ICr lança manual lúdico para crianças internadas" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
 
           <div>
