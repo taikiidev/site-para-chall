@@ -36,7 +36,7 @@ function Personagem() {
   return (
     <div className="pt-16 h-screen flex bg-blue-500">
       <div className="w-1/2 flex items-center justify-center">
-        <div className="h-[32rem] w-[15rem] bg-slate-400 flex flex-col items-center justify-center relative">
+        <div className="h-[32rem] w-[15rem] flex flex-col items-center justify-center relative">
           <img
             className="w-[100%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
             src={avatarImg}
