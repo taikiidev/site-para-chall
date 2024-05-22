@@ -1,25 +1,34 @@
 import avatarImg from "../../assets/avatar/avatar.png";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AvatarContext } from "../../provider/AvatarProvider";
 
 function Personagem() {
-  const {avatar, setAvatar, avatarInfo} = useContext(AvatarContext)
+  const {avatar, avatarInfo, setAvatar} = useContext(AvatarContext)
   
+  useEffect(() => {
+    setAvatar(JSON.parse(localStorage.getItem("avatar")))
+  }, [setAvatar])
+
+  const salvarAvatar = () => {
+    localStorage.setItem("avatar", JSON.stringify(avatar))
+  }
 
   const trocarProximo = (caracteristica) => {
-    setAvatar(prevAvatar => {
-        const newIndex = (prevAvatar[caracteristica] + 1) % avatarInfo[caracteristica].length;
-        return { ...prevAvatar, [caracteristica]: newIndex };
+    setAvatar((prevAvatar) => {
+      const newIndex =
+        (prevAvatar[caracteristica] + 1) % avatarInfo[caracteristica].length;
+      return { ...prevAvatar, [caracteristica]: newIndex };
     });
   };
 
   const trocarAnterior = (caracteristica) => {
-      setAvatar(prevAvatar => {
-          const newIndex = (prevAvatar[caracteristica] - 1 + avatarInfo[caracteristica].length) % avatarInfo[caracteristica].length;
-          return { ...prevAvatar, [caracteristica]: newIndex };
-      });
+    setAvatar((prevAvatar) => {
+      const newIndex =
+        (prevAvatar[caracteristica] - 1 + avatarInfo[caracteristica].length) %
+        avatarInfo[caracteristica].length;
+      return { ...prevAvatar, [caracteristica]: newIndex };
+    });
   };
-  console.log(avatar)
 
   return (
     <div className="pt-16 h-screen flex bg-blue-500">
@@ -89,7 +98,7 @@ function Personagem() {
             </button>
           </div>
 
-          <button className="bg-yellow-100">ATUALIZAR</button>
+          <button onClick={salvarAvatar} className="bg-yellow-100">SALVAR</button>
         </div>
       </div>
     </div>

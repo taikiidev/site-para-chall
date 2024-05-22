@@ -1,8 +1,11 @@
 function Assista() {
   return (
     <>
-      <div className="mt-16">
-        <h1>Assista</h1>
+      <div className="pt-16 w-screen h-screen bg-blue-500 flex">
+        <div className="w-[80%]"></div>
+        <aside className="grow border-l-2 border-gray-300 bg-gray-600">
+          
+        </aside>
       </div>
     </>
   );
