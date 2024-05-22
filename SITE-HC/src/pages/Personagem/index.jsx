@@ -6,7 +6,10 @@ function Personagem() {
   const {avatar, avatarInfo, setAvatar} = useContext(AvatarContext)
   
   useEffect(() => {
-    setAvatar(JSON.parse(localStorage.getItem("avatar")))
+    const avatarSaved = JSON.parse(localStorage.getItem("avatar"))
+    if(avatarSaved){
+      setAvatar(avatarSaved)
+    }
   }, [setAvatar])
 
   const salvarAvatar = () => {
@@ -66,9 +69,9 @@ function Personagem() {
         </div>
       </div>
 
-      <div className="w-1/2 bg-orange-500 flex justify-center items-center">
-        <div className="flex flex-col items-center py-5 w-1/2 gap-5 bg-blue-300">
-          <div className="flex gap-5 bg-yellow-100">
+      <div className="w-1/2 bg-blue-500 flex justify-center items-center font-abezee font-semibold text-lg">
+        <div className="flex flex-col items-center justify-center py-5 w-1/2 h-[50%] rounded-3xl gap-5 bg-blue-300">
+          <div className="flex justify-center gap-5 bg-yellow-100 hover:bg-yellow-200 rounded-[40px] py-4 px-4 w-[55%]">
             <button onClick={() => trocarProximo("camisa")}>
               &lt;
             </button>
@@ -78,7 +81,7 @@ function Personagem() {
             </button>
           </div>
 
-          <div className="flex gap-5 bg-yellow-100">
+          <div className="flex justify-center gap-5 bg-yellow-100 hover:bg-yellow-200 rounded-[40px] py-4 px-4 w-[55%]">
             <button onClick={() => trocarProximo("short")}>
               &lt;
             </button>
@@ -88,8 +91,8 @@ function Personagem() {
             </button>
           </div>
 
-          <div className="flex gap-5 bg-yellow-100">
-            <button onClick={() => trocarProximo("tenis")}>
+          <div className="flex justify-center gap-5 bg-yellow-100 hover:bg-yellow-200 rounded-[40px] py-4 px-4 w-[55%]">
+            <button className="" onClick={() => trocarProximo("tenis")}>
               &lt;
             </button>
             <p>tenis</p>
@@ -98,7 +101,7 @@ function Personagem() {
             </button>
           </div>
 
-          <button onClick={salvarAvatar} className="bg-yellow-100">SALVAR</button>
+          <button onClick={salvarAvatar} className="flex justify-center gap-5 bg-lime-400 hover:bg-lime-500 rounded-[40px] mt-10 py-4 px-4 w-[55%] text-xl">SALVAR</button>
         </div>
       </div>
     </div>
