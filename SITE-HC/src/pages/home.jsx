@@ -33,7 +33,7 @@ function Home() {
         </div>
 
         <div className="flex justify-center w-5/12 m-auto">
-           <h1 className="text-4xl font-modak mt-12 mb-14 text-white">Explore novos vídeos!</h1> 
+          <h1 className="text-4xl font-modak mt-12 mb-14 text-white">Explore novos vídeos!</h1> 
         </div>
        
         <div className="flex justify-between w-6/12 m-auto gap-5">\
