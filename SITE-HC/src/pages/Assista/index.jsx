@@ -5,7 +5,6 @@ import { AvatarContext } from "../../provider/AvatarProvider";
 
 function Assista() {
   const {avatar, avatarInfo, setAvatar} = useContext(AvatarContext)
-  
   useEffect(() => {
     const avatarSaved = JSON.parse(localStorage.getItem("avatar"))
     if(avatarSaved){
