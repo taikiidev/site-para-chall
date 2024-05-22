@@ -14,11 +14,15 @@ export default {
         'home-bg': "url('/src/assets/design.png')",
         'hospital-bg': "url('/src/assets/hospital.avif')",
         'hospital2-bg': "url('/src/assets/hospital2.png')",
+        'equipe-bg': "url('/src/assets/designequipe.png')",
+        'fundo-bg': "url('/src/assets/foto.png')",
       },
       
       fontFamily: {
         'modak': ['Modak', 'system-ui'],
-        'abezee': ['ABeeZee', 'sans-serif']
+        'abezee': ['ABeeZee', 'sans-serif'], 
+        'Orbitron' :['Orbitron', 'sans-serif'],
+        'Anta' :['Anta', 'sans-serif']
       }
       
     },
