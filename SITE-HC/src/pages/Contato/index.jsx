@@ -1,15 +1,8 @@
 function Contato() {
-
-    return ( 
-        <>
-
+    return (  
         <div className="mt-16">
-            <h1>contato</h1>
+            <h1>Contato</h1>
         </div>
-        
-        </>
-        
-        
     );
 }
 

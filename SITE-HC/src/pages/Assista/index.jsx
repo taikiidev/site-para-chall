@@ -40,7 +40,7 @@ function Assista() {
                 alt=""
                 />
               <img
-                className="z-10 w-[95%] absolute top-[95%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+                className="z-10 w-[95%] absolute top-[93%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
                 id="avatar-tenis"
                 data-attribute="tenis"
                 data-index="0"
