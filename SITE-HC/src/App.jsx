@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import './App.css'
-import React from 'react'
 import {Outlet} from 'react-router-dom'
-import Header from './components/header'
+import Header from './components/Header'
+import { AvatarProvider } from './provider/AvatarProvider'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
-      <Header/>
-      <Outlet/>
-
+      <AvatarProvider>
+        <Header/>
+        <Outlet/>
+      </AvatarProvider>
     </>
   )
 }
