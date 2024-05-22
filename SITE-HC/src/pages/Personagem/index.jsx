@@ -58,7 +58,7 @@ function Personagem() {
       </div>
 
       <div className="w-1/2  bg-avatar-bg flex justify-center items-center">
-        <div className="flex flex-col items-center rounded-2xl py-5 w-1/3 gap-5 bg-white">
+        <div className="flex flex-col justify-center items-center rounded-2xl py-5 w-1/3 h-1/3 gap-5 bg-white">
           <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
             <button onClick={() => trocarProximo("camisa")}>
               &lt;
@@ -89,7 +89,7 @@ function Personagem() {
             </button>
           </div>
 
-          <button className="flex w-40 items-center justify-center p-1 rounded-3xl gap-5 bg-blue-600">ATUALIZAR</button>
+          <button className="flex w-40 mt-16 items-center justify-center p-1 rounded-3xl gap-5 bg-blue-600">ATUALIZAR</button>
         </div>
       </div>
     </div>
