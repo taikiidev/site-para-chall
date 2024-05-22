@@ -13,6 +13,15 @@ function Navbar() {
             <Link to="funcionamento">
             <h1>Funcionamento</h1>
             </Link>
+            <Link to= "personagem">
+            <h1>Meu personagem</h1>
+            </Link>
+            <Link to="assista">
+            <h1>Meus vídeos</h1>
+            </Link>
+            <Link to="jogos">
+            <h1>Jogos</h1>
+            </Link>
         </div>
         </>
     );
