@@ -6,13 +6,13 @@ function Header() {
       <div className='font-abezee flex justify-between text-sm m-auto w-2/3 p-4'>
         <ul className="flex gap-5">
           <li>
-            <a href='https://www.hc.fm.usp.br/hc/portal/' target='_blank'><h1>- HC</h1></a>
+            <a href='https://www.hc.fm.usp.br/hc/portal/' target='_blank'><h1>HC</h1></a>
           </li>
           <li>
-            <a href='http://localhost:5173'><p>-Home</p></a>
+            <a href='http://localhost:5173'><p>Home</p></a>
           </li>
           <li>
-            <a href='https://portalpaciente.icr.usp.br/portal/' target='_blank'><h1>- Instituto da Criança</h1></a>
+            <a href='https://portalpaciente.icr.usp.br/portal/' target='_blank'><h1>Instituto da Criança</h1></a>
           </li>
         </ul>
         <Navbar />
