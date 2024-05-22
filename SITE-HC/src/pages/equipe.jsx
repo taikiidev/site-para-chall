@@ -41,7 +41,7 @@ function Equipe() {
                     </p>
 
                     <p className="text-gray-900">
-                        <span className="font-semibold">Email = </span>enzzo.50000@gmail.com
+                        <span className="font-semibold">Email = </span>luisalberto-rocha@hotmail.com
                     </p>
 
                     <p className="text-gray-900">
