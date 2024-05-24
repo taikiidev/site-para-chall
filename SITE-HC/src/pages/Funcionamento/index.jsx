@@ -1,7 +1,7 @@
 function Funcionamento() {
     return (  
-        <div>
-            Conatto
+        <div className="mt-16">
+            <h1>funcionamento</h1>
         </div>
     );
 }
