@@ -3,18 +3,18 @@ import { useContext, useEffect } from "react";
 import { AvatarContext } from "../../provider/AvatarProvider";
 
 function Personagem() {
-  const {avatar, avatarInfo, setAvatar} = useContext(AvatarContext)
-  
+  const { avatar, avatarInfo, setAvatar } = useContext(AvatarContext);
+
   useEffect(() => {
-    const avatarSaved = JSON.parse(localStorage.getItem("avatar"))
-    if(avatarSaved){
-      setAvatar(avatarSaved)
+    const avatarSaved = JSON.parse(localStorage.getItem("avatar"));
+    if (avatarSaved) {
+      setAvatar(avatarSaved);
     }
-  }, [setAvatar])
+  }, [setAvatar]);
 
   const salvarAvatar = () => {
-    localStorage.setItem("avatar", JSON.stringify(avatar))
-  }
+    localStorage.setItem("avatar", JSON.stringify(avatar));
+  };
 
   const trocarProximo = (caracteristica) => {
     setAvatar((prevAvatar) => {
@@ -70,37 +70,30 @@ function Personagem() {
       <div className="flex flex-col justify-center items-center rounded-2xl py-5 w-[20rem] h-[18rem] gap-10 bg-white mb-3">
         <div className="flex flex-col gap-5">
           <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
-            <button onClick={() => trocarProximo("camisa")}>
-              &lt;
-            </button>
+            <button onClick={() => trocarProximo("camisa")}>&lt;</button>
             <p>Camisa</p>
-            <button onClick={() => trocarAnterior("camisa")}>
-              &gt;
-            </button>
+            <button onClick={() => trocarAnterior("camisa")}>&gt;</button>
           </div>
 
           <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
-            <button onClick={() => trocarProximo("short")}>
-              &lt;
-            </button>
+            <button onClick={() => trocarProximo("short")}>&lt;</button>
             <p>Short</p>
-            <button onClick={() => trocarAnterior("short")}>
-              &gt;
-            </button>
+            <button onClick={() => trocarAnterior("short")}>&gt;</button>
           </div>
 
           <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
-            <button onClick={() => trocarProximo("tenis")}>
-              &lt;
-            </button>
+            <button onClick={() => trocarProximo("tenis")}>&lt;</button>
             <p>Tenis</p>
-            <button onClick={() => trocarAnterior("tenis")}>
-              &gt;
-            </button>
+            <button onClick={() => trocarAnterior("tenis")}>&gt;</button>
           </div>
         </div>
 
-        <button onClick={salvarAvatar} className="flex justify-center bg-lime-400 hover:bg-lime-500 rounded-[40px] py-4 px-4 w-[55%] text-xl">SALVAR</button>
+        <button
+          onClick={salvarAvatar}
+          className="flex justify-center bg-lime-400 hover:bg-lime-500 rounded-[40px] py-4 px-4 w-[55%] text-xl"
+        >
+          SALVAR
+        </button>
       </div>
     </div>
   );

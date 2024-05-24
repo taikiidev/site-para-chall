@@ -18,9 +18,13 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home/> },
+      { index: true, element: <Home/> },
       { path: 'contato', element: <Contato/> },
       { path: 'equipe', element: <Equipe/> },
       { path: 'funcionamento', element: <Funcionamento/> },
+      { path: 'jogos', element: <Jogos/>},
+      { path: 'assista', element: <Assista/>},
+      { path: 'personagem', element: <Personagem/>} // Definir a rota para a página inicial sem especificar um caminho
       { path: 'jogos', element: <Jogos/>},
       { path: 'assista', element: <Assista/>},
       { path: 'personagem', element: <Personagem/>} // Definir a rota para a página inicial sem especificar um caminho
