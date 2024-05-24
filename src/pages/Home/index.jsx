@@ -9,8 +9,9 @@ function Home() {
   const responseMessage = (response) => {
     const decoded = jwtDecode(response.credential);
     setProfile(decoded);
+    return profile
   };
-  cd;
+
   return (
     <>
       <div className="bg-home-bg bg-cover py-4 h-screen w-full flex flex-col items-center">
@@ -20,7 +21,7 @@ function Home() {
           </h1>
         </div>
 
-        <nav className="flex flex-col justify-between w-[20rem] font-modak gap-3 lg:w-[50rem] lg:flex-row">
+        <nav className="flex flex-col justify-between w-[20rem] font-modak gap-3 lg:w-[60rem] lg:flex-row">
           <Link to="jogos">
             <div className="flex items-center justify-center gap-4 text-white text-3xl sm:text-4xl">
               <img

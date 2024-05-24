@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       { path: 'funcionamento', element: <Funcionamento/> },
       { path: 'jogos', element: <Jogos/>},
       { path: 'assista', element: <Assista/>},
-      { path: 'personagem', element: <Personagem/>} // Definir a rota para a página inicial sem especificar um caminho
+      { path: 'personagem', element: <Personagem/>}, // Definir a rota para a página inicial sem especificar um caminho
       { path: 'jogos', element: <Jogos/>},
       { path: 'assista', element: <Assista/>},
       { path: 'personagem', element: <Personagem/>} // Definir a rota para a página inicial sem especificar um caminho
