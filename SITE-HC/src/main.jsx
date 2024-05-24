@@ -10,6 +10,7 @@ import Jogos from './pages/Jogos';
 import Assista from './pages/Assista';
 import Personagem from './pages/Personagem';
 import Contato from './pages/Contato';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <GoogleOAuthProvider clientId="561644790351-cee35tr6vs0suo8ttsvaeisuim1p3r39.apps.googleusercontent.com">
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </GoogleOAuthProvider>
 );
