@@ -1,6 +1,6 @@
 import avatarImg from "../../assets/avatar/avatar.png";
 import { useContext, useEffect } from "react";
-import { AvatarContext } from "../../provider/AvatarProvider";
+import { AvatarContext } from "../../context/AvatarProvider";
 
 function Personagem() {
   const { avatar, avatarInfo, setAvatar } = useContext(AvatarContext);
@@ -34,54 +34,48 @@ function Personagem() {
   };
 
   return (
-    <div className="pt-16 h-screen flex flex-col justify-center items-center gap-[2rem] bg-blue-500 md:flex-row md:gap-[15%]">
-      <div className="h-[32rem] w-[10rem] flex flex-col items-center justify-center relative md:w-[15rem]">
+    <div className="flex h-screen flex-col items-center justify-center gap-[2rem] bg-blue-500 pt-16 md:flex-row md:gap-[15%]">
+      <div className="relative flex h-[32rem] w-[10rem] flex-col items-center justify-center md:w-[15rem]">
         <img
-          className="w-[100%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+          className="absolute left-[50%] top-[50%] w-[100%] translate-x-[-50%] translate-y-[-50%]"
           src={avatarImg}
           alt=""
         />
         <img
-          className="z-20 w-[85%] absolute top-[58%] left-[47%] translate-x-[-50%] translate-y-[-50%]"
+          className="absolute left-[47%] top-[58%] z-20 w-[85%] translate-x-[-50%] translate-y-[-50%]"
           id="avatar-camisa"
-          data-attribute="camisa"
-          data-index="0"
           src={avatarInfo.camisa[avatar.camisa]}
           alt=""
         />
         <img
-          className="z-10 w-[58%] absolute top-[80%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+          className="absolute left-[49%] top-[80%] z-10 w-[58%] translate-x-[-50%] translate-y-[-50%]"
           id="avatar-short"
-          data-attribute="short"
-          data-index="0"
           src={avatarInfo.short[avatar.short]}
           alt=""
         />
         <img
-          className="z-10 w-[95%] absolute top-[96%] left-[49%] translate-x-[-50%] translate-y-[-50%]"
+          className="absolute left-[49%] top-[96%] z-10 w-[95%] translate-x-[-50%] translate-y-[-50%]"
           id="avatar-tenis"
-          data-attribute="tenis"
-          data-index="0"
           src={avatarInfo.tenis[avatar.tenis]}
           alt=""
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center rounded-2xl py-5 w-[20rem] h-[18rem] gap-10 bg-white mb-3">
+      <div className="mb-3 flex h-[18rem] w-[20rem] flex-col items-center justify-center gap-10 rounded-2xl bg-white py-5">
         <div className="flex flex-col gap-5">
-          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
+          <div className="flex w-32 justify-between gap-5 rounded-3xl bg-zinc-200 p-1">
             <button onClick={() => trocarProximo("camisa")}>&lt;</button>
             <p>Camisa</p>
             <button onClick={() => trocarAnterior("camisa")}>&gt;</button>
           </div>
 
-          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
+          <div className="flex w-32 justify-between gap-5 rounded-3xl bg-zinc-200 p-1">
             <button onClick={() => trocarProximo("short")}>&lt;</button>
             <p>Short</p>
             <button onClick={() => trocarAnterior("short")}>&gt;</button>
           </div>
 
-          <div className="flex justify-between w-32 p-1 rounded-3xl gap-5 bg-zinc-200">
+          <div className="flex w-32 justify-between gap-5 rounded-3xl bg-zinc-200 p-1">
             <button onClick={() => trocarProximo("tenis")}>&lt;</button>
             <p>Tenis</p>
             <button onClick={() => trocarAnterior("tenis")}>&gt;</button>
@@ -90,7 +84,7 @@ function Personagem() {
 
         <button
           onClick={salvarAvatar}
-          className="flex justify-center bg-lime-400 hover:bg-lime-500 rounded-[40px] py-4 px-4 w-[55%] text-xl"
+          className="flex w-[55%] justify-center rounded-[40px] bg-lime-400 px-4 py-4 text-xl hover:bg-lime-500 active:bg-lime-400"
         >
           SALVAR
         </button>
